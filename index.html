@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Title Goes Here</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+  <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body onload="start()">
+  <div class="container container-outer">
+    <div class="progress-container">
+      <h1 class="font-size-button color-white" id="progress"></h1>
+    </div>
+
+    <div class="container">
+      <div class="ui-container flex-margin">
+        <img class="logo" src="logo.png" />
+        <div class="group-button">
+          <input type="number" placeholder="8" id="nums" class="font-size-button"/>
+          <div id ="gen-container" onclick="resetdfs()" class="button generate">
+            <h1 id ="gen-button" class="font-size-button color-white">GENERATE MAZE</h1>
+          </div>
+        </div>
+        <div onclick="runAStar()" class="button findpath">
+          <h1 class="font-size-button color-white">FIND PATH</h1>
+        </div>
+      </div>
+
+      <div class="grid flex-margin">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"> </script>
+</body>
+
+</html>

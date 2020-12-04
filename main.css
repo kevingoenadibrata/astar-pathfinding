@@ -1,0 +1,141 @@
+
+:root {
+  --main: #1cb290;
+  --dark: #1f1f1f;
+  --light: #ffffff;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  user-select: none;
+}
+
+body{
+  background-color: var(--dark);
+}
+
+/* FONT-SIZES */
+.font-size-button{font-size: 20px;}
+.font-size-desc{font-size: 12px;}
+
+/* TEXT COLOR */
+.color-green{color: var(--main)}
+.color-dark{color: var(--dark)}
+.color-white{color: var(--light)}
+
+
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.container-outer{
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-container{
+  width: 25vw;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--dark);
+  -webkit-box-shadow: 0px 10px 44px -5px rgba(0,0,0,0.41);
+  -moz-box-shadow: 0px 10px 44px -5px rgba(0,0,0,0.41);
+  box-shadow: 0px 10px 44px -5px rgba(0,0,0,0.41);
+}
+
+.ui-container *{
+  margin: 5px 0 5px 0;
+}
+
+
+.flex-margin{
+  margin: 0 10px 0 10px;
+}
+
+.grid{
+  width: 500px;
+  height: 500px;
+  background-color: var(--dark);
+
+  display: grid;
+
+  border-style: solid;
+  border-color: var(--main);
+  border-width: 5px;
+}
+
+
+.cell{
+  background-color: none;
+}
+
+.logo{
+  width: 10vw;
+  height: auto;
+}
+
+.button{
+  background-color: var(--main);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border: 0px solid white;
+  box-sizing: border-box;
+}
+
+.generate{
+  width: 70%;
+}
+
+.findpath{
+  width: 100%;
+}
+
+.button:hover{
+  border: 5px solid white;
+}
+
+.group-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+input::placeholder{
+  color: rgb(200, 200, 200);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#nums{
+  width: 30%;
+  padding: 5px 0px 5px 10px;
+}
